@@ -1,0 +1,51 @@
+{
+  "method": "monocular VO: KLT + fwd/bwd check; rotation per frame from infinite homography K^-1 H K (SVD-orthonormalised); translation direction at keyframes (de-rotated parallax > 8px) from essential matrix vs keyframe, scaled by that parallax (heuristic, arbitrary units)",
+  "classification": "rough visual odometry (NOT SLAM: no map, no loop closure, no BA)",
+  "video": "ego/HL_CH01_005_1013.MP4",
+  "assumed_hfov_deg": 87.0,
+  "calibration": "assumed pinhole, cx,cy=centre, zero distortion (GoPro Linear lens mode); not calibrated",
+  "fps": 29.97002997002997,
+  "K": [
+    [
+      505.8144601348619,
+      0.0,
+      480.0
+    ],
+    [
+      0.0,
+      505.8144601348619,
+      270.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "proc_res": "960x540",
+  "src_res": "1920x1080",
+  "redetections": 3,
+  "keyframes": 54,
+  "lost_segments": [],
+  "processing_time_s": 44.8,
+  "frames": 2633,
+  "frames_tracked": 2633,
+  "tracked_pct": 100.0,
+  "n_loss_segments": 0,
+  "frames_zero_translation_low_parallax": 52,
+  "median_inliers": 403.0,
+  "path_length_units": 476.4122648239111,
+  "start_end_distance_units": 5.0880896855612425,
+  "imu_rotation_validation": {
+    "window_frames": 5,
+    "n_windows": 526,
+    "pearson_r": 0.794,
+    "median_abs_err_deg": 0.062,
+    "median_imu_angle_deg": 0.335,
+    "ratio_vo_over_imu_median": 0.949,
+    "start_to_end_rotation_deg": {
+      "vo": 14.47,
+      "imu_cori": 21.33
+    }
+  }
+}

@@ -1,0 +1,901 @@
+{
+    "codebase_version": "v2.1",
+    "robot_type": "human_egocentric_gopro",
+    "total_episodes": 1,
+    "total_frames": 1800,
+    "total_tasks": 1,
+    "total_videos": 4,
+    "total_chunks": 1,
+    "chunks_size": 1000,
+    "fps": 30,
+    "splits": {
+        "train": "0:1"
+    },
+    "data_path": "data/chunk-{episode_chunk:03d}/episode_{episode_index:06d}.parquet",
+    "video_path": "videos/chunk-{episode_chunk:03d}/{video_key}/episode_{episode_index:06d}.mp4",
+    "features": {
+        "observation.images.ego_head_left": {
+            "dtype": "video",
+            "shape": [
+                360,
+                640,
+                3
+            ],
+            "names": [
+                "height",
+                "width",
+                "channels"
+            ],
+            "info": {
+                "video.height": 360,
+                "video.width": 640,
+                "video.codec": "av1",
+                "video.pix_fmt": "yuv420p",
+                "video.is_depth_map": false,
+                "video.fps": 30,
+                "video.channels": 3,
+                "has_audio": false
+            }
+        },
+        "observation.hand_keypoints.ego_head_left": {
+            "dtype": "float32",
+            "shape": [
+                126
+            ],
+            "names": [
+                "left_lm0_x",
+                "left_lm0_y",
+                "left_lm0_z",
+                "left_lm1_x",
+                "left_lm1_y",
+                "left_lm1_z",
+                "left_lm2_x",
+                "left_lm2_y",
+                "left_lm2_z",
+                "left_lm3_x",
+                "left_lm3_y",
+                "left_lm3_z",
+                "left_lm4_x",
+                "left_lm4_y",
+                "left_lm4_z",
+                "left_lm5_x",
+                "left_lm5_y",
+                "left_lm5_z",
+                "left_lm6_x",
+                "left_lm6_y",
+                "left_lm6_z",
+                "left_lm7_x",
+                "left_lm7_y",
+                "left_lm7_z",
+                "left_lm8_x",
+                "left_lm8_y",
+                "left_lm8_z",
+                "left_lm9_x",
+                "left_lm9_y",
+                "left_lm9_z",
+                "left_lm10_x",
+                "left_lm10_y",
+                "left_lm10_z",
+                "left_lm11_x",
+                "left_lm11_y",
+                "left_lm11_z",
+                "left_lm12_x",
+                "left_lm12_y",
+                "left_lm12_z",
+                "left_lm13_x",
+                "left_lm13_y",
+                "left_lm13_z",
+                "left_lm14_x",
+                "left_lm14_y",
+                "left_lm14_z",
+                "left_lm15_x",
+                "left_lm15_y",
+                "left_lm15_z",
+                "left_lm16_x",
+                "left_lm16_y",
+                "left_lm16_z",
+                "left_lm17_x",
+                "left_lm17_y",
+                "left_lm17_z",
+                "left_lm18_x",
+                "left_lm18_y",
+                "left_lm18_z",
+                "left_lm19_x",
+                "left_lm19_y",
+                "left_lm19_z",
+                "left_lm20_x",
+                "left_lm20_y",
+                "left_lm20_z",
+                "right_lm0_x",
+                "right_lm0_y",
+                "right_lm0_z",
+                "right_lm1_x",
+                "right_lm1_y",
+                "right_lm1_z",
+                "right_lm2_x",
+                "right_lm2_y",
+                "right_lm2_z",
+                "right_lm3_x",
+                "right_lm3_y",
+                "right_lm3_z",
+                "right_lm4_x",
+                "right_lm4_y",
+                "right_lm4_z",
+                "right_lm5_x",
+                "right_lm5_y",
+                "right_lm5_z",
+                "right_lm6_x",
+                "right_lm6_y",
+                "right_lm6_z",
+                "right_lm7_x",
+                "right_lm7_y",
+                "right_lm7_z",
+                "right_lm8_x",
+                "right_lm8_y",
+                "right_lm8_z",
+                "right_lm9_x",
+                "right_lm9_y",
+                "right_lm9_z",
+                "right_lm10_x",
+                "right_lm10_y",
+                "right_lm10_z",
+                "right_lm11_x",
+                "right_lm11_y",
+                "right_lm11_z",
+                "right_lm12_x",
+                "right_lm12_y",
+                "right_lm12_z",
+                "right_lm13_x",
+                "right_lm13_y",
+                "right_lm13_z",
+                "right_lm14_x",
+                "right_lm14_y",
+                "right_lm14_z",
+                "right_lm15_x",
+                "right_lm15_y",
+                "right_lm15_z",
+                "right_lm16_x",
+                "right_lm16_y",
+                "right_lm16_z",
+                "right_lm17_x",
+                "right_lm17_y",
+                "right_lm17_z",
+                "right_lm18_x",
+                "right_lm18_y",
+                "right_lm18_z",
+                "right_lm19_x",
+                "right_lm19_y",
+                "right_lm19_z",
+                "right_lm20_x",
+                "right_lm20_y",
+                "right_lm20_z"
+            ]
+        },
+        "observation.hand_mask.ego_head_left": {
+            "dtype": "float32",
+            "shape": [
+                2
+            ],
+            "names": [
+                "left",
+                "right"
+            ]
+        },
+        "observation.hand_score.ego_head_left": {
+            "dtype": "float32",
+            "shape": [
+                2
+            ],
+            "names": [
+                "left",
+                "right"
+            ]
+        },
+        "observation.imu.ego_head_left": {
+            "dtype": "float32",
+            "shape": [
+                6
+            ],
+            "names": [
+                "acc_z",
+                "acc_x",
+                "acc_y",
+                "gyro_z",
+                "gyro_x",
+                "gyro_y"
+            ]
+        },
+        "observation.imu_orientation.ego_head_left": {
+            "dtype": "float32",
+            "shape": [
+                4
+            ],
+            "names": [
+                "w",
+                "x",
+                "y",
+                "z"
+            ]
+        },
+        "observation.images.ego_head_right": {
+            "dtype": "video",
+            "shape": [
+                360,
+                640,
+                3
+            ],
+            "names": [
+                "height",
+                "width",
+                "channels"
+            ],
+            "info": {
+                "video.height": 360,
+                "video.width": 640,
+                "video.codec": "av1",
+                "video.pix_fmt": "yuv420p",
+                "video.is_depth_map": false,
+                "video.fps": 30,
+                "video.channels": 3,
+                "has_audio": false
+            }
+        },
+        "observation.hand_keypoints.ego_head_right": {
+            "dtype": "float32",
+            "shape": [
+                126
+            ],
+            "names": [
+                "left_lm0_x",
+                "left_lm0_y",
+                "left_lm0_z",
+                "left_lm1_x",
+                "left_lm1_y",
+                "left_lm1_z",
+                "left_lm2_x",
+                "left_lm2_y",
+                "left_lm2_z",
+                "left_lm3_x",
+                "left_lm3_y",
+                "left_lm3_z",
+                "left_lm4_x",
+                "left_lm4_y",
+                "left_lm4_z",
+                "left_lm5_x",
+                "left_lm5_y",
+                "left_lm5_z",
+                "left_lm6_x",
+                "left_lm6_y",
+                "left_lm6_z",
+                "left_lm7_x",
+                "left_lm7_y",
+                "left_lm7_z",
+                "left_lm8_x",
+                "left_lm8_y",
+                "left_lm8_z",
+                "left_lm9_x",
+                "left_lm9_y",
+                "left_lm9_z",
+                "left_lm10_x",
+                "left_lm10_y",
+                "left_lm10_z",
+                "left_lm11_x",
+                "left_lm11_y",
+                "left_lm11_z",
+                "left_lm12_x",
+                "left_lm12_y",
+                "left_lm12_z",
+                "left_lm13_x",
+                "left_lm13_y",
+                "left_lm13_z",
+                "left_lm14_x",
+                "left_lm14_y",
+                "left_lm14_z",
+                "left_lm15_x",
+                "left_lm15_y",
+                "left_lm15_z",
+                "left_lm16_x",
+                "left_lm16_y",
+                "left_lm16_z",
+                "left_lm17_x",
+                "left_lm17_y",
+                "left_lm17_z",
+                "left_lm18_x",
+                "left_lm18_y",
+                "left_lm18_z",
+                "left_lm19_x",
+                "left_lm19_y",
+                "left_lm19_z",
+                "left_lm20_x",
+                "left_lm20_y",
+                "left_lm20_z",
+                "right_lm0_x",
+                "right_lm0_y",
+                "right_lm0_z",
+                "right_lm1_x",
+                "right_lm1_y",
+                "right_lm1_z",
+                "right_lm2_x",
+                "right_lm2_y",
+                "right_lm2_z",
+                "right_lm3_x",
+                "right_lm3_y",
+                "right_lm3_z",
+                "right_lm4_x",
+                "right_lm4_y",
+                "right_lm4_z",
+                "right_lm5_x",
+                "right_lm5_y",
+                "right_lm5_z",
+                "right_lm6_x",
+                "right_lm6_y",
+                "right_lm6_z",
+                "right_lm7_x",
+                "right_lm7_y",
+                "right_lm7_z",
+                "right_lm8_x",
+                "right_lm8_y",
+                "right_lm8_z",
+                "right_lm9_x",
+                "right_lm9_y",
+                "right_lm9_z",
+                "right_lm10_x",
+                "right_lm10_y",
+                "right_lm10_z",
+                "right_lm11_x",
+                "right_lm11_y",
+                "right_lm11_z",
+                "right_lm12_x",
+                "right_lm12_y",
+                "right_lm12_z",
+                "right_lm13_x",
+                "right_lm13_y",
+                "right_lm13_z",
+                "right_lm14_x",
+                "right_lm14_y",
+                "right_lm14_z",
+                "right_lm15_x",
+                "right_lm15_y",
+                "right_lm15_z",
+                "right_lm16_x",
+                "right_lm16_y",
+                "right_lm16_z",
+                "right_lm17_x",
+                "right_lm17_y",
+                "right_lm17_z",
+                "right_lm18_x",
+                "right_lm18_y",
+                "right_lm18_z",
+                "right_lm19_x",
+                "right_lm19_y",
+                "right_lm19_z",
+                "right_lm20_x",
+                "right_lm20_y",
+                "right_lm20_z"
+            ]
+        },
+        "observation.hand_mask.ego_head_right": {
+            "dtype": "float32",
+            "shape": [
+                2
+            ],
+            "names": [
+                "left",
+                "right"
+            ]
+        },
+        "observation.hand_score.ego_head_right": {
+            "dtype": "float32",
+            "shape": [
+                2
+            ],
+            "names": [
+                "left",
+                "right"
+            ]
+        },
+        "observation.imu.ego_head_right": {
+            "dtype": "float32",
+            "shape": [
+                6
+            ],
+            "names": [
+                "acc_z",
+                "acc_x",
+                "acc_y",
+                "gyro_z",
+                "gyro_x",
+                "gyro_y"
+            ]
+        },
+        "observation.imu_orientation.ego_head_right": {
+            "dtype": "float32",
+            "shape": [
+                4
+            ],
+            "names": [
+                "w",
+                "x",
+                "y",
+                "z"
+            ]
+        },
+        "observation.images.ego_wrist_left": {
+            "dtype": "video",
+            "shape": [
+                360,
+                640,
+                3
+            ],
+            "names": [
+                "height",
+                "width",
+                "channels"
+            ],
+            "info": {
+                "video.height": 360,
+                "video.width": 640,
+                "video.codec": "av1",
+                "video.pix_fmt": "yuv420p",
+                "video.is_depth_map": false,
+                "video.fps": 30,
+                "video.channels": 3,
+                "has_audio": false
+            }
+        },
+        "observation.hand_keypoints.ego_wrist_left": {
+            "dtype": "float32",
+            "shape": [
+                126
+            ],
+            "names": [
+                "left_lm0_x",
+                "left_lm0_y",
+                "left_lm0_z",
+                "left_lm1_x",
+                "left_lm1_y",
+                "left_lm1_z",
+                "left_lm2_x",
+                "left_lm2_y",
+                "left_lm2_z",
+                "left_lm3_x",
+                "left_lm3_y",
+                "left_lm3_z",
+                "left_lm4_x",
+                "left_lm4_y",
+                "left_lm4_z",
+                "left_lm5_x",
+                "left_lm5_y",
+                "left_lm5_z",
+                "left_lm6_x",
+                "left_lm6_y",
+                "left_lm6_z",
+                "left_lm7_x",
+                "left_lm7_y",
+                "left_lm7_z",
+                "left_lm8_x",
+                "left_lm8_y",
+                "left_lm8_z",
+                "left_lm9_x",
+                "left_lm9_y",
+                "left_lm9_z",
+                "left_lm10_x",
+                "left_lm10_y",
+                "left_lm10_z",
+                "left_lm11_x",
+                "left_lm11_y",
+                "left_lm11_z",
+                "left_lm12_x",
+                "left_lm12_y",
+                "left_lm12_z",
+                "left_lm13_x",
+                "left_lm13_y",
+                "left_lm13_z",
+                "left_lm14_x",
+                "left_lm14_y",
+                "left_lm14_z",
+                "left_lm15_x",
+                "left_lm15_y",
+                "left_lm15_z",
+                "left_lm16_x",
+                "left_lm16_y",
+                "left_lm16_z",
+                "left_lm17_x",
+                "left_lm17_y",
+                "left_lm17_z",
+                "left_lm18_x",
+                "left_lm18_y",
+                "left_lm18_z",
+                "left_lm19_x",
+                "left_lm19_y",
+                "left_lm19_z",
+                "left_lm20_x",
+                "left_lm20_y",
+                "left_lm20_z",
+                "right_lm0_x",
+                "right_lm0_y",
+                "right_lm0_z",
+                "right_lm1_x",
+                "right_lm1_y",
+                "right_lm1_z",
+                "right_lm2_x",
+                "right_lm2_y",
+                "right_lm2_z",
+                "right_lm3_x",
+                "right_lm3_y",
+                "right_lm3_z",
+                "right_lm4_x",
+                "right_lm4_y",
+                "right_lm4_z",
+                "right_lm5_x",
+                "right_lm5_y",
+                "right_lm5_z",
+                "right_lm6_x",
+                "right_lm6_y",
+                "right_lm6_z",
+                "right_lm7_x",
+                "right_lm7_y",
+                "right_lm7_z",
+                "right_lm8_x",
+                "right_lm8_y",
+                "right_lm8_z",
+                "right_lm9_x",
+                "right_lm9_y",
+                "right_lm9_z",
+                "right_lm10_x",
+                "right_lm10_y",
+                "right_lm10_z",
+                "right_lm11_x",
+                "right_lm11_y",
+                "right_lm11_z",
+                "right_lm12_x",
+                "right_lm12_y",
+                "right_lm12_z",
+                "right_lm13_x",
+                "right_lm13_y",
+                "right_lm13_z",
+                "right_lm14_x",
+                "right_lm14_y",
+                "right_lm14_z",
+                "right_lm15_x",
+                "right_lm15_y",
+                "right_lm15_z",
+                "right_lm16_x",
+                "right_lm16_y",
+                "right_lm16_z",
+                "right_lm17_x",
+                "right_lm17_y",
+                "right_lm17_z",
+                "right_lm18_x",
+                "right_lm18_y",
+                "right_lm18_z",
+                "right_lm19_x",
+                "right_lm19_y",
+                "right_lm19_z",
+                "right_lm20_x",
+                "right_lm20_y",
+                "right_lm20_z"
+            ]
+        },
+        "observation.hand_mask.ego_wrist_left": {
+            "dtype": "float32",
+            "shape": [
+                2
+            ],
+            "names": [
+                "left",
+                "right"
+            ]
+        },
+        "observation.hand_score.ego_wrist_left": {
+            "dtype": "float32",
+            "shape": [
+                2
+            ],
+            "names": [
+                "left",
+                "right"
+            ]
+        },
+        "observation.imu.ego_wrist_left": {
+            "dtype": "float32",
+            "shape": [
+                6
+            ],
+            "names": [
+                "acc_z",
+                "acc_x",
+                "acc_y",
+                "gyro_z",
+                "gyro_x",
+                "gyro_y"
+            ]
+        },
+        "observation.imu_orientation.ego_wrist_left": {
+            "dtype": "float32",
+            "shape": [
+                4
+            ],
+            "names": [
+                "w",
+                "x",
+                "y",
+                "z"
+            ]
+        },
+        "observation.images.ego_wrist_right": {
+            "dtype": "video",
+            "shape": [
+                360,
+                640,
+                3
+            ],
+            "names": [
+                "height",
+                "width",
+                "channels"
+            ],
+            "info": {
+                "video.height": 360,
+                "video.width": 640,
+                "video.codec": "av1",
+                "video.pix_fmt": "yuv420p",
+                "video.is_depth_map": false,
+                "video.fps": 30,
+                "video.channels": 3,
+                "has_audio": false
+            }
+        },
+        "observation.hand_keypoints.ego_wrist_right": {
+            "dtype": "float32",
+            "shape": [
+                126
+            ],
+            "names": [
+                "left_lm0_x",
+                "left_lm0_y",
+                "left_lm0_z",
+                "left_lm1_x",
+                "left_lm1_y",
+                "left_lm1_z",
+                "left_lm2_x",
+                "left_lm2_y",
+                "left_lm2_z",
+                "left_lm3_x",
+                "left_lm3_y",
+                "left_lm3_z",
+                "left_lm4_x",
+                "left_lm4_y",
+                "left_lm4_z",
+                "left_lm5_x",
+                "left_lm5_y",
+                "left_lm5_z",
+                "left_lm6_x",
+                "left_lm6_y",
+                "left_lm6_z",
+                "left_lm7_x",
+                "left_lm7_y",
+                "left_lm7_z",
+                "left_lm8_x",
+                "left_lm8_y",
+                "left_lm8_z",
+                "left_lm9_x",
+                "left_lm9_y",
+                "left_lm9_z",
+                "left_lm10_x",
+                "left_lm10_y",
+                "left_lm10_z",
+                "left_lm11_x",
+                "left_lm11_y",
+                "left_lm11_z",
+                "left_lm12_x",
+                "left_lm12_y",
+                "left_lm12_z",
+                "left_lm13_x",
+                "left_lm13_y",
+                "left_lm13_z",
+                "left_lm14_x",
+                "left_lm14_y",
+                "left_lm14_z",
+                "left_lm15_x",
+                "left_lm15_y",
+                "left_lm15_z",
+                "left_lm16_x",
+                "left_lm16_y",
+                "left_lm16_z",
+                "left_lm17_x",
+                "left_lm17_y",
+                "left_lm17_z",
+                "left_lm18_x",
+                "left_lm18_y",
+                "left_lm18_z",
+                "left_lm19_x",
+                "left_lm19_y",
+                "left_lm19_z",
+                "left_lm20_x",
+                "left_lm20_y",
+                "left_lm20_z",
+                "right_lm0_x",
+                "right_lm0_y",
+                "right_lm0_z",
+                "right_lm1_x",
+                "right_lm1_y",
+                "right_lm1_z",
+                "right_lm2_x",
+                "right_lm2_y",
+                "right_lm2_z",
+                "right_lm3_x",
+                "right_lm3_y",
+                "right_lm3_z",
+                "right_lm4_x",
+                "right_lm4_y",
+                "right_lm4_z",
+                "right_lm5_x",
+                "right_lm5_y",
+                "right_lm5_z",
+                "right_lm6_x",
+                "right_lm6_y",
+                "right_lm6_z",
+                "right_lm7_x",
+                "right_lm7_y",
+                "right_lm7_z",
+                "right_lm8_x",
+                "right_lm8_y",
+                "right_lm8_z",
+                "right_lm9_x",
+                "right_lm9_y",
+                "right_lm9_z",
+                "right_lm10_x",
+                "right_lm10_y",
+                "right_lm10_z",
+                "right_lm11_x",
+                "right_lm11_y",
+                "right_lm11_z",
+                "right_lm12_x",
+                "right_lm12_y",
+                "right_lm12_z",
+                "right_lm13_x",
+                "right_lm13_y",
+                "right_lm13_z",
+                "right_lm14_x",
+                "right_lm14_y",
+                "right_lm14_z",
+                "right_lm15_x",
+                "right_lm15_y",
+                "right_lm15_z",
+                "right_lm16_x",
+                "right_lm16_y",
+                "right_lm16_z",
+                "right_lm17_x",
+                "right_lm17_y",
+                "right_lm17_z",
+                "right_lm18_x",
+                "right_lm18_y",
+                "right_lm18_z",
+                "right_lm19_x",
+                "right_lm19_y",
+                "right_lm19_z",
+                "right_lm20_x",
+                "right_lm20_y",
+                "right_lm20_z"
+            ]
+        },
+        "observation.hand_mask.ego_wrist_right": {
+            "dtype": "float32",
+            "shape": [
+                2
+            ],
+            "names": [
+                "left",
+                "right"
+            ]
+        },
+        "observation.hand_score.ego_wrist_right": {
+            "dtype": "float32",
+            "shape": [
+                2
+            ],
+            "names": [
+                "left",
+                "right"
+            ]
+        },
+        "observation.imu.ego_wrist_right": {
+            "dtype": "float32",
+            "shape": [
+                6
+            ],
+            "names": [
+                "acc_z",
+                "acc_x",
+                "acc_y",
+                "gyro_z",
+                "gyro_x",
+                "gyro_y"
+            ]
+        },
+        "observation.imu_orientation.ego_wrist_right": {
+            "dtype": "float32",
+            "shape": [
+                4
+            ],
+            "names": [
+                "w",
+                "x",
+                "y",
+                "z"
+            ]
+        },
+        "observation.camera_pose.ego_head_left": {
+            "dtype": "float32",
+            "shape": [
+                7
+            ],
+            "names": [
+                "tx",
+                "ty",
+                "tz",
+                "qx",
+                "qy",
+                "qz",
+                "qw"
+            ]
+        },
+        "observation.camera_pose_valid.ego_head_left": {
+            "dtype": "float32",
+            "shape": [
+                1
+            ],
+            "names": [
+                "valid"
+            ]
+        },
+        "observation.source_frame_index": {
+            "dtype": "int64",
+            "shape": [
+                4
+            ],
+            "names": [
+                "ego_head_left",
+                "ego_head_right",
+                "ego_wrist_left",
+                "ego_wrist_right"
+            ]
+        },
+        "timestamp": {
+            "dtype": "float32",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "frame_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "episode_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        },
+        "task_index": {
+            "dtype": "int64",
+            "shape": [
+                1
+            ],
+            "names": null
+        }
+    }
+}

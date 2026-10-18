@@ -1,0 +1,410 @@
+{
+  "ego_HL_CH01_005_1013": {
+    "gpmd_stream_index": 3,
+    "payloads": 88,
+    "streams": {
+      "ACCL": {
+        "samples": 17440,
+        "STNM": "Accelerometer",
+        "ORIN": "ZXY",
+        "SIUN": "m/s\u00b2",
+        "rate_hz": 198.51
+      },
+      "GYRO": {
+        "samples": 17440,
+        "STNM": "Gyroscope",
+        "ORIN": "ZXY",
+        "SIUN": "rad/s",
+        "rate_hz": 198.51
+      },
+      "SHUT": {
+        "samples": 2633,
+        "STNM": "Exposure time (shutter speed)",
+        "SIUN": "s",
+        "rate_hz": 29.97
+      },
+      "WBAL": {
+        "samples": 878,
+        "STNM": "White Balance temperature (Kelvin)",
+        "rate_hz": 9.99
+      },
+      "ISOE": {
+        "samples": 2633,
+        "STNM": "Sensor ISO",
+        "rate_hz": 29.97
+      },
+      "CORI": {
+        "samples": 2633,
+        "STNM": "CameraOrientation",
+        "rate_hz": 29.97
+      },
+      "IORI": {
+        "samples": 2633,
+        "STNM": "ImageOrientation",
+        "rate_hz": 29.97
+      },
+      "GRAV": {
+        "samples": 2633,
+        "STNM": "Gravity Vector",
+        "rate_hz": 29.97
+      }
+    }
+  },
+  "ego_HR_CH01_005_1013": {
+    "gpmd_stream_index": 3,
+    "payloads": 89,
+    "streams": {
+      "ACCL": {
+        "samples": 17443,
+        "STNM": "Accelerometer",
+        "ORIN": "ZXY",
+        "SIUN": "m/s\u00b2",
+        "rate_hz": 197.64
+      },
+      "GYRO": {
+        "samples": 17443,
+        "STNM": "Gyroscope",
+        "ORIN": "ZXY",
+        "SIUN": "rad/s",
+        "rate_hz": 197.64
+      },
+      "SHUT": {
+        "samples": 2645,
+        "STNM": "Exposure time (shutter speed)",
+        "SIUN": "s",
+        "rate_hz": 29.97
+      },
+      "WBAL": {
+        "samples": 882,
+        "STNM": "White Balance temperature (Kelvin)",
+        "rate_hz": 9.99
+      },
+      "ISOE": {
+        "samples": 2645,
+        "STNM": "Sensor ISO",
+        "rate_hz": 29.97
+      },
+      "CORI": {
+        "samples": 2645,
+        "STNM": "CameraOrientation",
+        "rate_hz": 29.97
+      },
+      "IORI": {
+        "samples": 2645,
+        "STNM": "ImageOrientation",
+        "rate_hz": 29.97
+      },
+      "GRAV": {
+        "samples": 2645,
+        "STNM": "Gravity Vector",
+        "rate_hz": 29.97
+      }
+    }
+  },
+  "ego_WL_CH01_005_1013": {
+    "gpmd_stream_index": 3,
+    "payloads": 84,
+    "streams": {
+      "ACCL": {
+        "samples": 16642,
+        "STNM": "Accelerometer",
+        "ORIN": "ZXY",
+        "SIUN": "m/s\u00b2",
+        "rate_hz": 200.14
+      },
+      "GYRO": {
+        "samples": 16642,
+        "STNM": "Gyroscope",
+        "ORIN": "ZXY",
+        "SIUN": "rad/s",
+        "rate_hz": 200.14
+      },
+      "SHUT": {
+        "samples": 2492,
+        "STNM": "Exposure time (shutter speed)",
+        "SIUN": "s",
+        "rate_hz": 29.97
+      },
+      "WBAL": {
+        "samples": 831,
+        "STNM": "White Balance temperature (Kelvin)",
+        "rate_hz": 9.99
+      },
+      "ISOE": {
+        "samples": 2492,
+        "STNM": "Sensor ISO",
+        "rate_hz": 29.97
+      },
+      "CORI": {
+        "samples": 2492,
+        "STNM": "CameraOrientation",
+        "rate_hz": 29.97
+      },
+      "IORI": {
+        "samples": 2492,
+        "STNM": "ImageOrientation",
+        "rate_hz": 29.97
+      },
+      "GRAV": {
+        "samples": 2492,
+        "STNM": "Gravity Vector",
+        "rate_hz": 29.97
+      }
+    }
+  },
+  "ego_WR_CH01_005_1013": {
+    "gpmd_stream_index": 3,
+    "payloads": 84,
+    "streams": {
+      "ACCL": {
+        "samples": 16597,
+        "STNM": "Accelerometer",
+        "ORIN": "ZXY",
+        "SIUN": "m/s\u00b2",
+        "rate_hz": 199.28
+      },
+      "GYRO": {
+        "samples": 16597,
+        "STNM": "Gyroscope",
+        "ORIN": "ZXY",
+        "SIUN": "rad/s",
+        "rate_hz": 199.28
+      },
+      "SHUT": {
+        "samples": 2496,
+        "STNM": "Exposure time (shutter speed)",
+        "SIUN": "s",
+        "rate_hz": 29.97
+      },
+      "WBAL": {
+        "samples": 832,
+        "STNM": "White Balance temperature (Kelvin)",
+        "rate_hz": 9.99
+      },
+      "ISOE": {
+        "samples": 2496,
+        "STNM": "Sensor ISO",
+        "rate_hz": 29.97
+      },
+      "CORI": {
+        "samples": 2496,
+        "STNM": "CameraOrientation",
+        "rate_hz": 29.97
+      },
+      "IORI": {
+        "samples": 2496,
+        "STNM": "ImageOrientation",
+        "rate_hz": 29.97
+      },
+      "GRAV": {
+        "samples": 2496,
+        "STNM": "Gravity Vector",
+        "rate_hz": 29.97
+      }
+    }
+  },
+  "umi_GL_CH01_005_1014": {
+    "gpmd_stream_index": 3,
+    "payloads": 92,
+    "streams": {
+      "ACCL": {
+        "samples": 18180,
+        "STNM": "Accelerometer",
+        "ORIN": "ZXY",
+        "SIUN": "m/s\u00b2",
+        "rate_hz": 199.36
+      },
+      "GYRO": {
+        "samples": 18180,
+        "STNM": "Gyroscope",
+        "ORIN": "ZXY",
+        "SIUN": "rad/s",
+        "rate_hz": 199.36
+      },
+      "SHUT": {
+        "samples": 2733,
+        "STNM": "Exposure time (shutter speed)",
+        "SIUN": "s",
+        "rate_hz": 29.97
+      },
+      "WBAL": {
+        "samples": 911,
+        "STNM": "White Balance temperature (Kelvin)",
+        "rate_hz": 9.99
+      },
+      "ISOE": {
+        "samples": 2733,
+        "STNM": "Sensor ISO",
+        "rate_hz": 29.97
+      },
+      "CORI": {
+        "samples": 2733,
+        "STNM": "CameraOrientation",
+        "rate_hz": 29.97
+      },
+      "IORI": {
+        "samples": 2733,
+        "STNM": "ImageOrientation",
+        "rate_hz": 29.97
+      },
+      "GRAV": {
+        "samples": 2733,
+        "STNM": "Gravity Vector",
+        "rate_hz": 29.97
+      }
+    }
+  },
+  "umi_GR_CH01_005_1014": {
+    "gpmd_stream_index": 3,
+    "payloads": 92,
+    "streams": {
+      "ACCL": {
+        "samples": 18064,
+        "STNM": "Accelerometer",
+        "ORIN": "ZXY",
+        "SIUN": "m/s\u00b2",
+        "rate_hz": 198.09
+      },
+      "GYRO": {
+        "samples": 18064,
+        "STNM": "Gyroscope",
+        "ORIN": "ZXY",
+        "SIUN": "rad/s",
+        "rate_hz": 198.09
+      },
+      "SHUT": {
+        "samples": 2733,
+        "STNM": "Exposure time (shutter speed)",
+        "SIUN": "s",
+        "rate_hz": 29.97
+      },
+      "WBAL": {
+        "samples": 911,
+        "STNM": "White Balance temperature (Kelvin)",
+        "rate_hz": 9.99
+      },
+      "ISOE": {
+        "samples": 2733,
+        "STNM": "Sensor ISO",
+        "rate_hz": 29.97
+      },
+      "CORI": {
+        "samples": 2733,
+        "STNM": "CameraOrientation",
+        "rate_hz": 29.97
+      },
+      "IORI": {
+        "samples": 2733,
+        "STNM": "ImageOrientation",
+        "rate_hz": 29.97
+      },
+      "GRAV": {
+        "samples": 2733,
+        "STNM": "Gravity Vector",
+        "rate_hz": 29.97
+      }
+    }
+  },
+  "umi_HL_CH01_005_1014": {
+    "gpmd_stream_index": 3,
+    "payloads": 91,
+    "streams": {
+      "ACCL": {
+        "samples": 18233,
+        "STNM": "Accelerometer",
+        "ORIN": "ZXY",
+        "SIUN": "m/s\u00b2",
+        "rate_hz": 200.9
+      },
+      "GYRO": {
+        "samples": 18233,
+        "STNM": "Gyroscope",
+        "ORIN": "ZXY",
+        "SIUN": "rad/s",
+        "rate_hz": 200.9
+      },
+      "SHUT": {
+        "samples": 2720,
+        "STNM": "Exposure time (shutter speed)",
+        "SIUN": "s",
+        "rate_hz": 29.97
+      },
+      "WBAL": {
+        "samples": 907,
+        "STNM": "White Balance temperature (Kelvin)",
+        "rate_hz": 9.99
+      },
+      "ISOE": {
+        "samples": 2720,
+        "STNM": "Sensor ISO",
+        "rate_hz": 29.97
+      },
+      "CORI": {
+        "samples": 2720,
+        "STNM": "CameraOrientation",
+        "rate_hz": 29.97
+      },
+      "IORI": {
+        "samples": 2720,
+        "STNM": "ImageOrientation",
+        "rate_hz": 29.97
+      },
+      "GRAV": {
+        "samples": 2720,
+        "STNM": "Gravity Vector",
+        "rate_hz": 29.97
+      }
+    }
+  },
+  "umi_HR_CH01_005_1014": {
+    "gpmd_stream_index": 3,
+    "payloads": 91,
+    "streams": {
+      "ACCL": {
+        "samples": 18117,
+        "STNM": "Accelerometer",
+        "ORIN": "ZXY",
+        "SIUN": "m/s\u00b2",
+        "rate_hz": 199.11
+      },
+      "GYRO": {
+        "samples": 18117,
+        "STNM": "Gyroscope",
+        "ORIN": "ZXY",
+        "SIUN": "rad/s",
+        "rate_hz": 199.11
+      },
+      "SHUT": {
+        "samples": 2727,
+        "STNM": "Exposure time (shutter speed)",
+        "SIUN": "s",
+        "rate_hz": 29.97
+      },
+      "WBAL": {
+        "samples": 909,
+        "STNM": "White Balance temperature (Kelvin)",
+        "rate_hz": 9.99
+      },
+      "ISOE": {
+        "samples": 2727,
+        "STNM": "Sensor ISO",
+        "rate_hz": 29.97
+      },
+      "CORI": {
+        "samples": 2727,
+        "STNM": "CameraOrientation",
+        "rate_hz": 29.97
+      },
+      "IORI": {
+        "samples": 2727,
+        "STNM": "ImageOrientation",
+        "rate_hz": 29.97
+      },
+      "GRAV": {
+        "samples": 2727,
+        "STNM": "Gravity Vector",
+        "rate_hz": 29.97
+      }
+    }
+  }
+}

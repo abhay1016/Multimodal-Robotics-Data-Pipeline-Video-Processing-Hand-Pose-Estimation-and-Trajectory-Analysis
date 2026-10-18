@@ -1,0 +1,104 @@
+{
+  "method": "GCC-PHAT audio cross-correlation, 8 kHz mono, sub-sample parabolic refinement",
+  "reference": "HL_CH01_005_1013",
+  "cameras": {
+    "HL_CH01_005_1013": {
+      "offset_vs_ref_ms": 0.0,
+      "offset_vs_ref_frames": 0.0,
+      "fps": 29.97002997002997,
+      "frames": 2633,
+      "duration_s": 87.854
+    },
+    "HR_CH01_005_1013": {
+      "offset_vs_ref_ms": 36.763,
+      "offset_vs_ref_frames": 1.1,
+      "fps": 29.97002997002997,
+      "frames": 2645,
+      "duration_s": 88.255
+    },
+    "WL_CH01_005_1013": {
+      "offset_vs_ref_ms": -3169.365,
+      "offset_vs_ref_frames": -94.99,
+      "fps": 29.97002997002997,
+      "frames": 2492,
+      "duration_s": 83.15
+    },
+    "WR_CH01_005_1013": {
+      "offset_vs_ref_ms": -1966.639,
+      "offset_vs_ref_frames": -58.94,
+      "fps": 29.97002997002997,
+      "frames": 2496,
+      "duration_s": 83.283
+    }
+  },
+  "pairwise": {
+    "HL_CH01_005_1013->HR_CH01_005_1013": {
+      "offset_s": 0.03676,
+      "peak_ratio": 21.47
+    },
+    "HL_CH01_005_1013->WL_CH01_005_1013": {
+      "offset_s": -3.16937,
+      "peak_ratio": 3.94
+    },
+    "HL_CH01_005_1013->WR_CH01_005_1013": {
+      "offset_s": -1.96664,
+      "peak_ratio": 7.08
+    },
+    "HR_CH01_005_1013->WL_CH01_005_1013": {
+      "offset_s": -3.208,
+      "peak_ratio": 3.9
+    },
+    "HR_CH01_005_1013->WR_CH01_005_1013": {
+      "offset_s": -2.00341,
+      "peak_ratio": 5.32
+    },
+    "WL_CH01_005_1013->WR_CH01_005_1013": {
+      "offset_s": 1.20344,
+      "peak_ratio": 8.77
+    }
+  },
+  "validation": {
+    "triplet_closure": [
+      {
+        "triplet": "HL_CH01_005_1013,HR_CH01_005_1013,WL_CH01_005_1013",
+        "closure_err_ms": 1.871
+      },
+      {
+        "triplet": "HL_CH01_005_1013,HR_CH01_005_1013,WR_CH01_005_1013",
+        "closure_err_ms": 0.006
+      },
+      {
+        "triplet": "HL_CH01_005_1013,WL_CH01_005_1013,WR_CH01_005_1013",
+        "closure_err_ms": -0.718
+      },
+      {
+        "triplet": "HR_CH01_005_1013,WL_CH01_005_1013,WR_CH01_005_1013",
+        "closure_err_ms": 1.147
+      }
+    ],
+    "drift_first_vs_last_third": {
+      "HR_CH01_005_1013": {
+        "offset_first_third_ms": 36.776,
+        "offset_last_third_ms": 36.777
+      },
+      "WL_CH01_005_1013": {
+        "offset_first_third_ms": null,
+        "offset_last_third_ms": -3169.087
+      },
+      "WR_CH01_005_1013": {
+        "offset_first_third_ms": null,
+        "offset_last_third_ms": -1966.51
+      }
+    }
+  },
+  "common_timeline": {
+    "start_in_each_cam_s": {
+      "HL_CH01_005_1013": 3.1694,
+      "HR_CH01_005_1013": 3.2061,
+      "WL_CH01_005_1013": 0.0,
+      "WR_CH01_005_1013": 1.2027
+    },
+    "overlap_duration_s": 82.08
+  },
+  "status": "OK"
+}

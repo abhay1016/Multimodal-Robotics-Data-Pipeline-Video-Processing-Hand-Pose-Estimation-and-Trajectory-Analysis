@@ -1,0 +1,121 @@
+{
+  "hardware": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD | Windows-10-10.0.26200-SP0 | MediaPipe 0.10.14 CPU",
+  "cameras": [
+    {
+      "camera": "HL_CH01_005_1013",
+      "fps": 29.97002997002997,
+      "resolution": "1920x1080",
+      "processed_at": "960x540",
+      "frame_range": [
+        95,
+        1892
+      ],
+      "segment_media_time_s": [
+        3.17,
+        63.13
+      ],
+      "frames_processed": 1798,
+      "frames_ge1_hand": 1798,
+      "frames_both_hands": 1798,
+      "frames_no_detection": 0,
+      "decode_errors": 0,
+      "frames_with_left": 1798,
+      "frames_with_right": 1798,
+      "hands_low_confidence": 3,
+      "frames_label_conflict": 0,
+      "handedness_spatial_check": {
+        "two_hand_frames": 1798,
+        "right_wrist_right_of_left_pct": 100.0
+      },
+      "processing_time_s": 158.62,
+      "proc_fps": 11.34
+    },
+    {
+      "camera": "HR_CH01_005_1013",
+      "fps": 29.97002997002997,
+      "resolution": "1920x1080",
+      "processed_at": "960x540",
+      "frame_range": [
+        96,
+        1893
+      ],
+      "segment_media_time_s": [
+        3.203,
+        63.163
+      ],
+      "frames_processed": 1798,
+      "frames_ge1_hand": 1798,
+      "frames_both_hands": 1798,
+      "frames_no_detection": 0,
+      "decode_errors": 0,
+      "frames_with_left": 1798,
+      "frames_with_right": 1798,
+      "hands_low_confidence": 0,
+      "frames_label_conflict": 0,
+      "handedness_spatial_check": {
+        "two_hand_frames": 1798,
+        "right_wrist_right_of_left_pct": 100.0
+      },
+      "processing_time_s": 146.44,
+      "proc_fps": 12.28
+    },
+    {
+      "camera": "WL_CH01_005_1013",
+      "fps": 29.97002997002997,
+      "resolution": "1920x1080",
+      "processed_at": "960x540",
+      "frame_range": [
+        0,
+        1797
+      ],
+      "segment_media_time_s": [
+        0.0,
+        59.96
+      ],
+      "frames_processed": 1798,
+      "frames_ge1_hand": 1668,
+      "frames_both_hands": 751,
+      "frames_no_detection": 130,
+      "decode_errors": 0,
+      "frames_with_left": 1402,
+      "frames_with_right": 897,
+      "hands_low_confidence": 343,
+      "frames_label_conflict": 120,
+      "handedness_spatial_check": {
+        "two_hand_frames": 631,
+        "right_wrist_right_of_left_pct": 99.2
+      },
+      "processing_time_s": 161.78,
+      "proc_fps": 11.11
+    },
+    {
+      "camera": "WR_CH01_005_1013",
+      "fps": 29.97002997002997,
+      "resolution": "1920x1080",
+      "processed_at": "960x540",
+      "frame_range": [
+        36,
+        1833
+      ],
+      "segment_media_time_s": [
+        1.201,
+        61.161
+      ],
+      "frames_processed": 1798,
+      "frames_ge1_hand": 137,
+      "frames_both_hands": 3,
+      "frames_no_detection": 1661,
+      "decode_errors": 0,
+      "frames_with_left": 24,
+      "frames_with_right": 113,
+      "hands_low_confidence": 17,
+      "frames_label_conflict": 3,
+      "handedness_spatial_check": {
+        "two_hand_frames": 0,
+        "right_wrist_right_of_left_pct": null
+      },
+      "processing_time_s": 116.91,
+      "proc_fps": 15.38
+    }
+  ]
+}

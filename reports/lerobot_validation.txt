@@ -1,0 +1,71 @@
+codebase_version (info.json): v2.1
+num_episodes: 1
+num_frames: 1800
+fps: 30
+features:
+  observation.images.ego_head_left: video (360, 640, 3)
+  observation.hand_keypoints.ego_head_left: float32 (126,)
+  observation.hand_mask.ego_head_left: float32 (2,)
+  observation.hand_score.ego_head_left: float32 (2,)
+  observation.imu.ego_head_left: float32 (6,)
+  observation.imu_orientation.ego_head_left: float32 (4,)
+  observation.images.ego_head_right: video (360, 640, 3)
+  observation.hand_keypoints.ego_head_right: float32 (126,)
+  observation.hand_mask.ego_head_right: float32 (2,)
+  observation.hand_score.ego_head_right: float32 (2,)
+  observation.imu.ego_head_right: float32 (6,)
+  observation.imu_orientation.ego_head_right: float32 (4,)
+  observation.images.ego_wrist_left: video (360, 640, 3)
+  observation.hand_keypoints.ego_wrist_left: float32 (126,)
+  observation.hand_mask.ego_wrist_left: float32 (2,)
+  observation.hand_score.ego_wrist_left: float32 (2,)
+  observation.imu.ego_wrist_left: float32 (6,)
+  observation.imu_orientation.ego_wrist_left: float32 (4,)
+  observation.images.ego_wrist_right: video (360, 640, 3)
+  observation.hand_keypoints.ego_wrist_right: float32 (126,)
+  observation.hand_mask.ego_wrist_right: float32 (2,)
+  observation.hand_score.ego_wrist_right: float32 (2,)
+  observation.imu.ego_wrist_right: float32 (6,)
+  observation.imu_orientation.ego_wrist_right: float32 (4,)
+  observation.camera_pose.ego_head_left: float32 (7,)
+  observation.camera_pose_valid.ego_head_left: float32 (1,)
+  observation.source_frame_index: int64 (4,)
+  timestamp: float32 (1,)
+  frame_index: int64 (1,)
+  episode_index: int64 (1,)
+  index: int64 (1,)
+  task_index: int64 (1,)
+sample frame (index 900):
+  observation.images.ego_head_left: (3, 360, 640) torch.float32 
+  observation.images.ego_head_right: (3, 360, 640) torch.float32 
+  observation.images.ego_wrist_left: (3, 360, 640) torch.float32 
+  observation.images.ego_wrist_right: (3, 360, 640) torch.float32 
+  observation.hand_keypoints.ego_head_left: (126,) torch.float32 
+  observation.hand_mask.ego_head_left: (2,) torch.float32 tensor([1., 1.])
+  observation.hand_score.ego_head_left: (2,) torch.float32 tensor([0.9774, 0.9477])
+  observation.imu.ego_head_left: (6,) torch.float32 tensor([1.1103e+00, 1.3046e+00, 9.5707e+00, 2.1299e-03, 1.2780e-02, 6.1768e-02])
+  observation.imu_orientation.ego_head_left: (4,) torch.float32 tensor([ 0.9948, -0.0521, -0.0383,  0.0779])
+  observation.hand_keypoints.ego_head_right: (126,) torch.float32 
+  observation.hand_mask.ego_head_right: (2,) torch.float32 tensor([1., 1.])
+  observation.hand_score.ego_head_right: (2,) torch.float32 tensor([0.9763, 0.9439])
+  observation.imu.ego_head_right: (6,) torch.float32 tensor([7.1703e-01, 1.2350e+00, 9.5755e+00, 3.1949e-03, 6.3898e-03, 6.4963e-02])
+  observation.imu_orientation.ego_head_right: (4,) torch.float32 tensor([ 0.9982, -0.0162, -0.0467,  0.0339])
+  observation.hand_keypoints.ego_wrist_left: (126,) torch.float32 
+  observation.hand_mask.ego_wrist_left: (2,) torch.float32 tensor([1., 0.])
+  observation.hand_score.ego_wrist_left: (2,) torch.float32 tensor([0.5603, 0.0000])
+  observation.imu.ego_wrist_left: (6,) torch.float32 tensor([-7.8034,  1.6835, -4.5947,  0.0575,  0.2492,  0.1778])
+  observation.imu_orientation.ego_wrist_left: (4,) torch.float32 tensor([ 0.9728,  0.1079,  0.1949, -0.0626])
+  observation.hand_keypoints.ego_wrist_right: (126,) torch.float32 
+  observation.hand_mask.ego_wrist_right: (2,) torch.float32 tensor([0., 0.])
+  observation.hand_score.ego_wrist_right: (2,) torch.float32 tensor([0., 0.])
+  observation.imu.ego_wrist_right: (6,) torch.float32 tensor([-6.3477, -7.6211,  0.0887, -0.0447,  0.0181, -0.0181])
+  observation.imu_orientation.ego_wrist_right: (4,) torch.float32 tensor([ 0.9466, -0.0913,  0.1038, -0.2912])
+  observation.camera_pose.ego_head_left: (7,) torch.float32 tensor([ -4.1699, -12.8401,  -2.1576,  -0.0638,  -0.0286,  -0.0417,   0.9967])
+  observation.camera_pose_valid.ego_head_left: () torch.float32 1.0
+  observation.source_frame_index: (4,) torch.int64 tensor([994, 995, 899, 935])
+  timestamp: () torch.float32 30.0
+  frame_index: () torch.int64 900
+  episode_index: () torch.int64 0
+  index: () torch.int64 900
+  task_index: () torch.int64 0
+  task:  str Bimanual test-tube handling at a lab bench (egocentric human demonstration)
